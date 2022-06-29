@@ -1,0 +1,117 @@
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    transition: transform .7s ease-in-out;
+}
+
+#logo:hover {
+    transform:scale(50%);
+}
+
+.designText {
+    color: rgb(214, 121, 136);
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.row {
+    position: relative;
+    margin: 1em 1em;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 1em 2em;
+}
+
+.pinkBtn {
+    background-color: pink;
+    box-shadow: 4px 4px 4px rgb(166, 166, 166);
+}
+
+#column {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    background-color: pink;
+    font-family: Century Gothic;
+    padding: 1em 2em;
+    text-align: center;
+    box-shadow: 4px 4px 4px rgb(166, 166, 166);
+}
+
+.nav-item a {
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Century Gothic;
+    margin: 0px 10px;
+    position: relative;
+    z-index: 0;
+}
+
+/* Top & Bottom Borders Out */
+.topBotomBordersOut a:before,
+.topBotomBordersOut a:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.topBotomBordersOut a:before {
+    top: 0px;
+    transform: translateY(10px);
+}
+
+.topBotomBordersOut a:after {
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+.topBotomBordersOut a:hover:before,
+.topBotomBordersOut a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.pink {
+    color: rgb(153, 153, 153);
+    font: 16px Century Gothic;
+    font-weight: 600;
+}
+
+h4 {
+    color: rgb(153, 153, 153);
+}
+
+#box {
+    color: pink;
+}
+
+.center-size {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
